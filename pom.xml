@@ -7,7 +7,7 @@
 	<packaging>pom</packaging>
 	<name>springboot-demo</name>
 	<url>http://maven.apache.org</url>
-	
+
 	<properties>
 		<jdk.version>1.8</jdk.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -36,6 +36,21 @@
 					<target>${jdk.version}</target>
 					<encode>${project.build.sourceEncoding}</encode>
 				</configuration>
+			</plugin>
+
+			<plugin> <!-- 项目的打包发布 -->
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration> <!--程序主类-->
+					<mainClass>org.springboot.demo。StartSpringBoot</mainClass>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
