@@ -9,4 +9,5 @@ public class MessageController extends AbstractBaseController {
 	public String msg(String mid) {
 		return "ECHO : " +  super.getMessage("demo.message");
 	}
+	
 }

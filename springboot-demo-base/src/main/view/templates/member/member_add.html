@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>雇员增加</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<link rel="icon" type="image/x-icon" href="/images/Logo.ico"/>  
+</head>
+<body>
+	<p th:text="${mid}"/>
+	雇员编号: <input type="text" id="mid" name="mid" th:value="${mid}"/><br/>
+	雇员姓名: <input type="text" id="name" name="name"/><br/>
+	<input type="submit" value="增加"/><input type="reset" value="取消"/>
+</body>
+</html>
